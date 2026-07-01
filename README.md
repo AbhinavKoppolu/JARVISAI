@@ -1,2 +1,6 @@
 # JARVISAI
-J.A.R.V.I.S. is an interactive space command console.NASA Link: Fetches live space imagery.Voice HUD: Microphone input with synchronized audio readouts.Kinetic Type: Streams text via a pulsing cursor.Memory: Retains conversational context.Design: Animated CSS space layout.
+I built a futuristic space command console named JARVIS.
+NASA Connection: Grabs and displays the official space image of the day.
+Voice Control: You can talk into the microphone, and JARVIS talks back out loud.
+Smart Memory: Answers your questions and keeps track of the chat history.
+Space Theme: Has moving neon stars and glowing aurora lights in the background.
