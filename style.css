@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #050b14;
+    color: #66fcf1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.jarvis-container {
+    width: 90%;
+    max-width: 600px;
+    height: 85vh;
+    background: rgba(10, 25, 47, 0.85);
+    border: 2px solid #1f4068;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(102, 252, 241, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #1f4068;
+    padding-bottom: 10px;
+}
+
+.arc-reactor {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px dashed #66fcf1;
+    margin: 0 auto 10px;
+    animation: spin 4s linear infinite;
+    box-shadow: 0 0 15px #66fcf1;
+    transition: 0.3s;
+}
+
+.arc-reactor.listening {
+    border-color: #ff0055;
+    box-shadow: 0 0 25px #ff0055;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    100% {transform:scale(1.1);}
+}
+
+.status {
+    font-size: 0.8rem;
+    color: #4e9f3d;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+.chat-display {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #1f4068;
+    background: rgba(5, 11, 20, 0.9);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 6px;
+    max-width: 85%;
+    line-height: 1.4;
+}
+
+.system-msg {
+    background: rgba(31, 64, 104, 0.4);
+    align-self: flex-start;
+    border-left: 3px solid #66fcf1;
+}
+
+.user-msg {
+    background: rgba(102, 252, 241, 0.1);
+    align-self: flex-end;
+    border-right: 3px solid #45a29e;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#userInput {
+    flex: 1;
+    background: #0f172a;
+    border: 1px solid #1f4068;
+    color: #66fcf1;
+    padding: 12px;
+    border-radius: 4px;
+    outline: none;
+}
+
+#userInput:focus {
+    border-color: #66fcf1;
+}
+
+#micBtn, #sendBtn {
+    background: #1f4068;
+    color: #66fcf1;
+    border: 1px solid #66fcf1;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#micBtn {
+    font-size: 1.2rem;
+}
+
+#micBtn:hover, #sendBtn:hover {
+    background: #66fcf1;
+    color: #050b14;
+    box-shadow: 0 0 10px #66fcf1;
+}
+
+
