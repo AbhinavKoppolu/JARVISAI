@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="space-viewport">
+
+        <div class="nebula-array alpha"></div>
+        <div class="nebula-array beta"></div>
+        <div class="stardust-parallax-field tier-1"></div>
+        <div class="stardust-parallax-field tier-2"></div>
+
+        <div class="satellite-orbital-station">
+            <div class="sat-score"></div>
+            <div class="sat-wing-left"></div>
+            <div class="sat-wing-right"></div>
+            <div class="sat-antenna"></div>
+            <div class="sat-dish"></div>
+            <div class="signal-wave ring-1"></div>
+            <div class="signal-wave ring-2"></div>
+        </div>
+
+        <div class="alien-mountain-range backdrop-ridge"></div>
+        <div class="alien-mountain-range foreground-peaks"></div>
+
+        <div class="surface-exploration-rover">
+            <div class="rover-chasis"></div>
+            <div class="rover-sensor-most">
+                <div class="rover-optic-eye"></div>
+            </div>
+            <div class="rover-wheel-assembly">
+                <div class="wheel wh-1"></div>
+                <div class="wheel wh-2"></div>
+                <div class="wheel wh-3"></div>
+            </div>
+            <div class="rover-status-bubble">TRANSMITTING...</div>
+        </div>
+
+    </div>
+
+    <div class="jarvis-container">
+        <header>
+            <div class="arc-reactor" id="arcReactor"></div>
+            <h1>JARVIS SYSTEM</h1>
+            <p class="status" id="statusField">SYSTEM STATUS: ONLINE </p>
+        </header>
+
+        <div id="globe-container"></div>
+
+        <div class="chat-display" id="chatDisplay">
+            <div class="message system-msg">Welcome back, Sir. Core space telemetry ad mainframe systems are online. Ready for input. </div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type or press Mic to speak..." autocomplete="off">
+            <button id="micBtn" title="Speak to Jarvis">🎙️</button>
+            <button id="sendBtn">SEND</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
