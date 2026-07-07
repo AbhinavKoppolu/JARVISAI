@@ -468,7 +468,7 @@ function fetchJarvisSpacePhoto(chatDisplayArea) {
         if (!chat) return;
 
         const triviaBox = document.createElement('div');
-        triviaBox.className = 'nessage system-msg';
+        triviaBox.className = 'message system-msg';
         triviaBox.style.borderLeft = '3px solid #66fcf1';
         triviaBox.style.background = 'rgba(10, 25, 47, 0.4)';
         triviaBox.style.width = '95%';
